@@ -221,7 +221,7 @@ body {
 
     .hero-content {
         max-width: 100%;
-        transform: translateY(-100px);
+        transform: translateY(-110px);
         gap: 30px;
     }
 
@@ -240,7 +240,7 @@ body {
     }
 
     .arrow-down {
-        bottom: 40px;
+        bottom: 45px;
         width: 40px;
     }
 
@@ -252,12 +252,5 @@ body {
     .bio-content p {
         width: 320px;
         font-size: 14px;
-    }
-
-    .whats-btn {
-        left: unset;
-        right: 20px;
-        top: 80vh;
-        width: 55px;
     }
 }
