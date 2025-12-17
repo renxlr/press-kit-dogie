@@ -216,12 +216,12 @@ body {
     }
 
     .logo {
-        width: 300px;
+        width: 350px;
     }
 
     .hero-content {
         max-width: 100%;
-        transform: translateY(-90px);
+        transform: translateY(-100px);
         gap: 30px;
     }
 
@@ -257,7 +257,7 @@ body {
     .whats-btn {
         left: unset;
         right: 20px;
-        top: 40vh;
+        top: 90vh;
         width: 55px;
     }
 }
