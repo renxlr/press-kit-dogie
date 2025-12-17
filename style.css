@@ -236,7 +236,7 @@ body {
     }
 
     .botoes {
-        gap: 50px;
+        gap: 35px;
     }
 
     .arrow-down {
@@ -257,7 +257,7 @@ body {
     .whats-btn {
         left: unset;
         right: 20px;
-        top: 90vh;
+        top: 80vh;
         width: 55px;
     }
 }
