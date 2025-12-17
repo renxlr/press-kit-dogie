@@ -193,10 +193,56 @@ body {
 }
 
 @media (max-width: 600px) {
+
+    .bg-meio {
+        height: 750px;
+        max-width: 100%;
+        background-size: cover;
+    }
+
+    .logo {
+        width: 300px;
+    }
+
+    .hero-content {
+        transform: translateY(-100px);
+        gap: 30px;
+    }
+
+    .btn {
+        width: 55px;
+        height: 55px;
+    }
+
+    .btn img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .botoes {
+        gap: 50px;
+    }
+
+    .arrow-down {
+        bottom: 40px;
+        width: 40px;
+    }
+
+    .titulo-bio {
+        width: 300px;
+        height: auto;
+    }
+
+    .bio-content p {
+        width: 320px;
+        font-size: 14px;
+    }
+
     .whats-btn {
         left: unset;
         right: 20px;
-        top: 45vh;
-        width: 60px;
+        top: 40vh;
+        width: 55px;
     }
 }
+
