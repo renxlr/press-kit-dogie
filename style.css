@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
+svg {
+    shape-rendering: geometricPrecision;
+    text-rendering: optimizeLegibility;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -60,7 +65,8 @@ body {
 }
 
 .btn:hover img {
-    filter: brightness(0) saturate(100%) invert(18%) sepia(92%) saturate(2300%) hue-rotate(234deg) brightness(92%) contrast(90%);
+    filter: brightness(0) saturate(100%) invert(18%) sepia(92%) saturate(2300%)
+        hue-rotate(234deg) brightness(92%) contrast(90%);
 }
 
 .btn {
@@ -153,7 +159,8 @@ body {
 }
 
 @keyframes bounce {
-    0%, 100% {
+    0%,
+    100% {
         transform: translateX(-50%) translateY(0);
     }
     50% {
@@ -207,7 +214,6 @@ body {
 }
 
 @media (max-width: 600px) {
-
     .bg-meio {
         height: 750px;
         max-width: 100%;
@@ -260,4 +266,3 @@ body {
         width: 55px;
     }
 }
-
