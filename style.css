@@ -209,7 +209,7 @@ body {
 
     .hero-content {
         max-width: 100%;
-        transform: translateY(-90px);
+        transform: translateY(-45px);
         gap: 30px;
     }
 
