@@ -8,12 +8,14 @@ body {
 .bg-meio {
     position: relative;
     height: 1024px;
-    width: 584px;
+    width: 100%;
+    max-width: 584px;
     margin: 0 auto;
     background-image: url('./assets/mainFotobg.svg');
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
+
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -34,12 +36,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    transform: translateY(-150px);
+    transform: translateY(-80%);
     gap: 40px;
 }
 
 .logo {
-    width: 455px;
+    width: min(455px, 85%);
     height: auto;
 }
 
@@ -51,8 +53,7 @@ body {
 }
 
 .btn:hover img {
-    filter: brightness(0) saturate(100%) invert(18%) sepia(92%) saturate(2300%)
-        hue-rotate(234deg) brightness(92%) contrast(90%);
+    filter: brightness(0) saturate(100%) invert(18%) sepia(92%) saturate(2300%) hue-rotate(234deg) brightness(92%) contrast(90%);
 }
 
 .btn {
@@ -149,7 +150,8 @@ body {
 
 .bg-bio {
     position: relative;
-    width: 584px;
+    width: 100%;
+    max-width: 584px;
     height: 1024px;
     margin: 0 auto;
     background-image: url('./assets/bgbiografia.svg');
@@ -173,8 +175,8 @@ body {
 
 .titulo-bio {
     margin-top: 40px;
-    width: 429px;
-    height: 111px;
+    width: min(429px, 80%);
+    height: auto;
 }
 
 .bio-content p {
@@ -182,7 +184,7 @@ body {
     margin-top: 40px;
     color: white;
     font-size: 15px;
-    width: 430px;
+    width: min(430px, 85%);
     text-align: left;
 }
 
@@ -190,35 +192,11 @@ body {
     margin-top: 40px;
 }
 
-@media (max-height: 900px) {
-    .whats-btn {
-        top: 650px;
-    }
-}
-
-@media (max-height: 750px) {
-    .whats-btn {
-        top: 550px;
-    }
-}
-
-@media (max-height: 600px) {
-    .whats-btn {
-        top: 450px;
-    }
-}
-
-/* CELULAR */
 @media (max-width: 600px) {
     .whats-btn {
         left: unset;
         right: 20px;
         top: 45vh;
         width: 60px;
-    }
-
-    .whats-btn:hover {
-        transform: translateY(-50%) scale(1.1);
-        opacity: 1;
     }
 }
