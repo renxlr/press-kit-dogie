@@ -81,8 +81,10 @@ body {
 .botoes {
     display: flex;
     justify-content: center;
-    gap: 80px;
+    align-items: flex-start;
+    gap: 40px;
     width: 100%;
+    padding: 0 10px;
 }
 
 .botao-item {
@@ -90,15 +92,18 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 6px;
+    gap: 8px;
+    flex: 1;
+    max-width: 120px;
 }
 
 .botao-item span {
-    font-size: 16px;
-    letter-spacing: 1px;
+    font-size: 13px;
+    letter-spacing: 0.5px;
     color: #ffffff;
     opacity: 0.85;
     text-align: center;
+    white-space: nowrap;
 }
 
 .botao-item:hover .btn {
@@ -117,9 +122,9 @@ body {
 
 .whats-btn {
     position: fixed;
-    top: 772px;
-    left: calc(50% + 292px + 20px);
-    width: 70px;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
     height: auto;
     cursor: pointer;
     transition: transform 0.2s ease, opacity 0.2s ease;
@@ -135,7 +140,7 @@ body {
 .arrow-down {
     position: absolute;
     bottom: 70px;
-    left: 49%;
+    left: 50%;
     transform: translateX(-50%);
     width: 50px;
     animation: bounce 1.5s infinite;
@@ -209,7 +214,7 @@ body {
 
     .hero-content {
         max-width: 100%;
-        transform: translateY(-45px);
+        transform: translateY(-90px);
         gap: 30px;
     }
 
