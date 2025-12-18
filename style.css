@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+:root {
+    --cor-primaria: #eaa200;
+    --largura-bio: min(430px, 85%);
+}
 
 html {
     scroll-behavior: smooth;
@@ -59,11 +62,6 @@ body {
     object-fit: contain;
 }
 
-.btn:hover img {
-    filter: brightness(0) saturate(100%) invert(18%) sepia(92%) saturate(2300%)
-        hue-rotate(234deg) brightness(92%) contrast(90%);
-}
-
 .btn {
     width: 65px;
     height: 65px;
@@ -74,13 +72,24 @@ body {
     align-items: center;
     justify-content: center;
     transition: transform 0.2s ease, opacity 0.2s ease;
-    border: 2px solid #eaa200;
+    border: 2px solid var(--cor-primaria);
     backdrop-filter: blur(4px);
+    transition: all 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 15px rgba(234, 162, 0, 0.4),
+        inset 0 0 10px rgba(234, 162, 0, 0.2);
 }
 
 .btn:hover {
     transform: scale(1.1);
-    opacity: 1;
+    box-shadow: 0 0 25px rgba(234, 162, 0, 0.7),
+        inset 0 0 15px rgba(234, 162, 0, 0.4);
+    background-color: rgba(234, 162, 0, 0.1);
+}
+
+.btn:hover img {
+    filter: brightness(0) saturate(100%) invert(18%) sepia(92%) saturate(2300%)
+        hue-rotate(234deg) brightness(92%) contrast(90%);
 }
 
 .botoes {
@@ -109,6 +118,7 @@ body {
     opacity: 0.85;
     text-align: center;
     white-space: nowrap;
+    transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
 .botao-item:hover .btn {
@@ -169,7 +179,7 @@ body {
     max-width: 584px;
     height: 1024px;
     margin: 0 auto;
-    background-image: url('./assets/bgbiografia.svg');
+    background-image: url('./assets/bgbiografia.png');
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -190,22 +200,73 @@ body {
 
 .titulo-bio {
     margin-top: 40px;
-    width: min(429px, 80%);
+    width: var(--largura-bio);
+    display: block;
     height: auto;
 }
 
 .bio-content p {
-    font-family: 'Poppins', sans-serif;
-    margin-top: 40px;
-    color: white;
-    font-size: 15px;
-    width: min(430px, 85%);
+    max-width: 450px;
+    width: var(--largura-bio);
+    margin: 50px auto 0 auto;
+    font-family: 'Lora', serif;
+    color: #fdfdfd;
+    font-size: 1.1rem;
+    letter-spacing: 0.01em;
+    line-height: 1.8;
     text-align: justify;
-    line-height: 1.6;
+    opacity: 0.9;
+    word-spacing: 1px;
+}
+
+.bio-content p strong {
+    color: var(--cor-primaria);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
 }
 
 .separador-bio {
+    margin-top: 50px;
+}
+
+.bio-social-btns {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
     margin-top: 40px;
+}
+
+.bio-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid var(--cor-primaria);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(234, 162, 0, 0.4),
+        inset 0 0 10px rgba(234, 162, 0, 0.2);
+    text-decoration: none;
+}
+
+.bio-btn img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.bio-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px rgba(234, 162, 0, 0.7),
+        inset 0 0 15px rgba(234, 162, 0, 0.4);
+    background-color: rgba(234, 162, 0, 0.1);
+}
+
+.bio-btn:hover img {
+    filter: brightness(0) saturate(100%) invert(18%) sepia(92%) saturate(2300%)
+        hue-rotate(234deg) brightness(92%) contrast(90%);
 }
 
 @media (max-width: 600px) {
