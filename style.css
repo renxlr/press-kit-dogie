@@ -18,7 +18,7 @@ body {
     width: 100%;
     max-width: 584px;
     margin: 0 auto;
-    background-image: url('./assets/mainFotobg.svg');
+    background-image: url('./assets/mainBG.png');
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -88,8 +88,8 @@ body {
 }
 
 .btn:hover img {
-    filter: brightness(0) saturate(100%) invert(18%) sepia(92%) saturate(2300%)
-        hue-rotate(234deg) brightness(92%) contrast(90%);
+    filter: brightness(0) saturate(100%) invert(20%) sepia(95%) saturate(4000%)
+        hue-rotate(215deg) brightness(110%) contrast(115%);
 }
 
 .botoes {
@@ -130,10 +130,7 @@ body {
     transform: translateY(-2px);
 }
 
-.whats-btn:hover {
-    transform: translateY(-50%) scale(1.1);
-    opacity: 1;
-}
+
 
 .whats-btn {
     position: fixed;
@@ -177,9 +174,9 @@ body {
     position: relative;
     width: 100%;
     max-width: 584px;
-    height: 1024px;
+    height: 2000px;
     margin: 0 auto;
-    background-image: url('./assets/bgbiografia.png');
+    background-image: url('./assets/bgbio-extendido.png');
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -209,14 +206,15 @@ body {
     max-width: 450px;
     width: var(--largura-bio);
     margin: 50px auto 0 auto;
-    font-family: 'Lora', serif;
+    font-family: 'Poppins', sans-serif;
     color: #fdfdfd;
     font-size: 1.1rem;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.1em;
     line-height: 1.8;
-    text-align: justify;
+    text-align: left;
     opacity: 0.9;
     word-spacing: 1px;
+    margin-bottom: 60px;
 }
 
 .bio-content p strong {
@@ -233,7 +231,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 40px;
-    margin-top: 40px;
+    margin-top: 10px;
 }
 
 .bio-btn {
@@ -252,8 +250,8 @@ body {
 }
 
 .bio-btn img {
-    width: 30px;
-    height: 30px;
+    width: 41px;
+    height: 41px;
     object-fit: contain;
 }
 
@@ -265,8 +263,26 @@ body {
 }
 
 .bio-btn:hover img {
-    filter: brightness(0) saturate(100%) invert(18%) sepia(92%) saturate(2300%)
-        hue-rotate(234deg) brightness(92%) contrast(90%);
+    filter: brightness(0) saturate(100%) invert(20%) sepia(95%) saturate(4000%)
+        hue-rotate(215deg) brightness(110%) contrast(115%);
+}
+
+.up-btn {
+    position: fixed;
+    left: 50%;
+    margin-left: 320px;
+    bottom: 280px;
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    opacity: 0.9;
+    z-index: 999;
+}
+
+.up-btn:hover {
+    transform: scale(1.1);
+    opacity: 1;
 }
 
 @media (max-width: 600px) {
@@ -282,7 +298,7 @@ body {
 
     .hero-content {
         max-width: 100%;
-        transform: translateY(-110px);
+        transform: translateY(-120px);
         gap: 30px;
     }
 
