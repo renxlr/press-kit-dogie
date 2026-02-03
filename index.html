@@ -397,29 +397,6 @@
                 />
             </div>
         </section>
-        <script>
-            const whatsBtn = document.querySelector('.whats-btn');
-            const upBtn = document.querySelector('.up-btn');
-
-            window.addEventListener('scroll', () => {
-                if (window.scrollY > 200) {
-                    whatsBtn.classList.add('show');
-                    upBtn.classList.add('show');
-                } else {
-                    whatsBtn.classList.remove('show');
-                    upBtn.classList.remove('show');
-                }
-            });
-
-            upBtn.addEventListener('click', () => {
-                window.scrollTo({
-                    top: 0,
-                    behavior: 'smooth',
-                });
-
-                upBtn.classList.remove('show');
-                whatsBtn.classList.remove('show');
-            });
-        </script>
+        <script src="script.js"></script>
     </body>
 </html>
