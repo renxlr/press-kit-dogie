@@ -410,6 +410,16 @@
                     upBtn.classList.remove('show');
                 }
             });
+
+            upBtn.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth',
+                });
+
+                upBtn.classList.remove('show');
+                whatsBtn.classList.remove('show');
+            });
         </script>
     </body>
 </html>
