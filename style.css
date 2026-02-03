@@ -1,6 +1,5 @@
 :root {
     --cor-primaria: #eaa200;
-    --largura-bio: min(430px, 85%);
 }
 
 html {
@@ -51,7 +50,7 @@ body {
 }
 
 .logo {
-    width: min(455px, 85%);
+    width: min(510px, 85%);
     height: auto;
 }
 
@@ -71,18 +70,22 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: transform 0.2s ease, opacity 0.2s ease;
+    transition:
+        transform 0.2s ease,
+        opacity 0.2s ease;
     border: 2px solid var(--cor-primaria);
     backdrop-filter: blur(4px);
     transition: all 0.3s ease;
     background-color: rgba(0, 0, 0, 0.3);
-    box-shadow: 0 0 15px rgba(234, 162, 0, 0.4),
+    box-shadow:
+        0 0 15px rgba(234, 162, 0, 0.4),
         inset 0 0 10px rgba(234, 162, 0, 0.2);
 }
 
 .btn:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 25px rgba(234, 162, 0, 0.7),
+    box-shadow:
+        0 0 25px rgba(234, 162, 0, 0.7),
         inset 0 0 15px rgba(234, 162, 0, 0.4);
     background-color: rgba(234, 162, 0, 0.1);
 }
@@ -118,7 +121,9 @@ body {
     opacity: 0.85;
     text-align: center;
     white-space: nowrap;
-    transition: transform 0.2s ease, opacity 0.2s ease;
+    transition:
+        transform 0.2s ease,
+        opacity 0.2s ease;
 }
 
 .botao-item:hover .btn {
@@ -130,8 +135,6 @@ body {
     transform: translateY(-2px);
 }
 
-
-
 .whats-btn {
     position: fixed;
     left: 50%;
@@ -140,7 +143,9 @@ body {
     width: 60px;
     height: auto;
     cursor: pointer;
-    transition: transform 0.2s ease, opacity 0.2s ease;
+    transition:
+        transform 0.2s ease,
+        opacity 0.2s ease;
     opacity: 0.9;
     z-index: 999;
 }
@@ -174,7 +179,7 @@ body {
     position: relative;
     width: 100%;
     max-width: 584px;
-    height: 2000px;
+    height: 2100px;
     margin: 0 auto;
     background-image: url('./assets/bgbio-extendido.png');
     background-position: center top;
@@ -196,16 +201,15 @@ body {
 }
 
 .titulo-bio {
-    margin-top: 40px;
-    width: var(--largura-bio);
+    margin: 40px auto 0;
+    width: min(430px, 85%);
     display: block;
     height: auto;
 }
 
 .bio-content p {
-    max-width: 450px;
-    width: var(--largura-bio);
-    margin: 50px auto 0 auto;
+    max-width: 600px;
+    margin: 50px;
     font-family: 'Poppins', sans-serif;
     color: #fdfdfd;
     font-size: 1.1rem;
@@ -215,6 +219,10 @@ body {
     opacity: 0.9;
     word-spacing: 1px;
     margin-bottom: 60px;
+}
+
+.bio-content p + p {
+    margin-top: 0.1rem;
 }
 
 .bio-content p strong {
@@ -244,7 +252,8 @@ body {
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
-    box-shadow: 0 0 15px rgba(234, 162, 0, 0.4),
+    box-shadow:
+        0 0 15px rgba(234, 162, 0, 0.4),
         inset 0 0 10px rgba(234, 162, 0, 0.2);
     text-decoration: none;
 }
@@ -257,7 +266,8 @@ body {
 
 .bio-btn:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 25px rgba(234, 162, 0, 0.7),
+    box-shadow:
+        0 0 25px rgba(234, 162, 0, 0.7),
         inset 0 0 15px rgba(234, 162, 0, 0.4);
     background-color: rgba(234, 162, 0, 0.1);
 }
@@ -275,7 +285,9 @@ body {
     width: 40px;
     height: auto;
     cursor: pointer;
-    transition: transform 0.2s ease, opacity 0.2s ease;
+    transition:
+        transform 0.2s ease,
+        opacity 0.2s ease;
     opacity: 0.9;
     z-index: 999;
 }
@@ -283,6 +295,31 @@ body {
 .up-btn:hover {
     transform: scale(1.1);
     opacity: 1;
+}
+
+u {
+    text-decoration-color: var(--cor-primaria);
+}
+
+.instagram-media {
+    max-width: 500px !important;
+    width: 100% !important;
+}
+
+.bg-tracks {
+    position: relative;
+    width: 100%;
+    max-width: 584px;
+    height: 1024px;
+    margin: 0 auto;
+    background-image: url('./assets/tracksetsbg.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    overflow: hidden;
 }
 
 @media (max-width: 600px) {
@@ -329,5 +366,10 @@ body {
     .bio-content p {
         width: 320px;
         font-size: 14px;
+    }
+
+    .instagram-media {
+        max-width: 320px !important;
+        width: 100% !important;
     }
 }
