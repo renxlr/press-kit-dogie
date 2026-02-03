@@ -179,7 +179,7 @@ body {
     position: relative;
     width: 100%;
     max-width: 584px;
-    height: 2100px;
+    height: 2024px;
     margin: 0 auto;
     background-image: url('./assets/bgbio-extendido.png');
     background-position: center top;
@@ -330,7 +330,7 @@ u {
     }
 
     .logo {
-        width: 350px;
+        width: 360px;
     }
 
     .hero-content {
@@ -371,5 +371,51 @@ u {
     .instagram-media {
         max-width: 320px !important;
         width: 100% !important;
+    }
+
+    .separador-bio {
+        max-width: 320px;
+    }
+
+    .bg-tracks {
+        background-size: contain;
+        background-position: center top;
+        height: auto;
+        aspect-ratio: 584 / 1024;
+    }
+
+    .whats-btn {
+        margin-left: 0;
+        left: auto;
+        right: 16px;
+        bottom: 100px;
+        width: 52px;
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(20px);
+        transition:
+            opacity 0.3s ease,
+            transform 0.3s ease;
+    }
+
+    .up-btn {
+        margin-left: 0;
+        left: auto;
+        right: 24px;
+        bottom: 170px;
+        width: 36px;
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(20px);
+        transition:
+            opacity 0.3s ease,
+            transform 0.3s ease;
+    }
+
+    .whats-btn.show,
+    .up-btn.show {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
     }
 }
