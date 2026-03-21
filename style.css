@@ -290,9 +290,12 @@ u {
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
+
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
     overflow: hidden;
 }
 
@@ -311,6 +314,15 @@ u {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.telefone-ctt {
+    margin-top: -10px;
+    margin-bottom: -60px;
+}
+
+.email-ctt {
+    margin-top: -10px;
 }
 
 @media (max-width: 600px) {
@@ -422,9 +434,20 @@ u {
     }
 
     .bg-bio {
-        height: 2200px
+        height: 2200px;
     }
 
+    .telefone-ctt {
+        width: 300px;
+    }
+
+    .email-ctt {
+        width: 300px;
+    }
+
+    .redes-ctt {
+        width: 270px;
+    }
 }
 
 @media (hover: hover) and (pointer: fine) {
