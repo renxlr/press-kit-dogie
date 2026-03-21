@@ -152,7 +152,7 @@ body {
     position: relative;
     width: 100%;
     max-width: 584px;
-    height: 2024px;
+    height: 2800px;
     margin: 0 auto;
     background-image: url('./assets/bgbio-extendido.png');
     background-position: center top;
@@ -280,11 +280,6 @@ u {
     overflow: hidden;
 }
 
-.video-wrapper iframe {
-    max-width: 90%;
-    border-radius: 8px;
-}
-
 .bg-contato {
     position: relative;
     width: 100%;
@@ -299,6 +294,23 @@ u {
     align-items: flex-start;
     justify-content: center;
     overflow: hidden;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 560px;
+    margin: 0 auto;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 @media (max-width: 600px) {
@@ -338,7 +350,7 @@ u {
     }
 
     .titulo-bio {
-        width: 300px;
+        width: 260px;
         height: auto;
     }
 
@@ -350,6 +362,7 @@ u {
     .instagram-media {
         max-width: 320px !important;
         width: 100% !important;
+        height: 582px;
     }
 
     .separador-bio {
@@ -404,6 +417,14 @@ u {
         pointer-events: auto;
         transform: translateY(0);
     }
+    .video-container {
+        max-width: 370px;
+    }
+
+    .bg-bio {
+        height: 2200px
+    }
+
 }
 
 @media (hover: hover) and (pointer: fine) {
