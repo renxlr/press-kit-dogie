@@ -271,6 +271,30 @@ u {
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+    overflow: hidden;
+}
+
+.video-wrapper iframe {
+    max-width: 90%;
+    border-radius: 8px;
+}
+
+.bg-contato {
+    position: relative;
+    width: 100%;
+    max-width: 584px;
+    height: 1024px;
+    margin: 0 auto;
+    background-image: url('./assets/contatobg.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -337,6 +361,13 @@ u {
         background-position: center top;
         height: auto;
         aspect-ratio: 584 / 1024;
+    }
+
+    .bg-contato {
+        background-size: contain;
+        background-position: center top;
+        height: auto;
+        aspect-ratio: 584 / 1100;
     }
 
     .whats-btn {
