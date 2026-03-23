@@ -265,7 +265,7 @@ u {
     position: relative;
     width: 100%;
     max-width: 584px;
-    height: 1024px;
+    height: 1450px;
     margin: 0 auto;
     background-image: url('./assets/tracksetsbg.png');
     background-position: center top;
@@ -385,7 +385,7 @@ u {
         background-size: contain;
         background-position: center top;
         height: auto;
-        aspect-ratio: 584 / 1024;
+        aspect-ratio: 584 / 1300;
     }
 
     .bg-contato {
