@@ -325,6 +325,25 @@ u {
     margin-top: -10px;
 }
 
+.footer {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px 0;
+}
+
+.footer p {
+    font-size: 12px;
+    color: #aaa;
+    opacity: 0.7;
+}
+
+.footer a {
+    font-size: 12px;
+    color: #aaa;
+    opacity: 0.7;
+}
+
 @media (max-width: 600px) {
     .bg-meio {
         height: 750px;
@@ -392,7 +411,7 @@ u {
         background-size: contain;
         background-position: center top;
         height: auto;
-        aspect-ratio: 584 / 1100;
+        aspect-ratio: 584 / 1300;
     }
 
     .whats-btn {
@@ -448,6 +467,10 @@ u {
     .redes-ctt {
         width: 270px;
     }
+
+    .footer {
+    margin-top: 10px;
+}
 }
 
 @media (hover: hover) and (pointer: fine) {
